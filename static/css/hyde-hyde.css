@@ -15,8 +15,8 @@ html {
       font-size: 20px; } }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: wheat; /*b3b3b3 */
+  background-color: black;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -202,7 +202,7 @@ a {
     border-style: none;
     text-decoration: none; }
   a:focus {
-    color: #515151;
+    color: wheat;
     border-bottom: 1px dotted #bbb;
     text-decoration: none;
     background: transparent;
@@ -212,7 +212,7 @@ a {
       border-style: none;
       text-decoration: none; }
   a:hover {
-    color: #515151;
+    color: #b3b3b3;
     border-bottom: 1px dotted #bbb;
     text-decoration: none;
     background: transparent;

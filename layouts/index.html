@@ -15,9 +15,21 @@
         <span class="item__title--big">
           <a href="{{ .RelPermalink }}" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>{{ .Title }}</a>
         </span>
+        <div class= "headerDesc">
         <span class="item__date">
           {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
         </span>
+               
+        <!-- CATEGORIES -->
+        <!-- {{if isset .Params "categories"}} 
+        <i class="layui-icon layui-icon-list" style="font-size: 32px; vertical-align: -3px;"></i>
+        {{end}} -->
+       
+        {{ range $tag := .Params.categories }}
+         <a class="badge badge-category" href="{{ "/categories/" | relLangURL }}{{ $tag | urlize}}/">{{ $tag | upper }}</a>
+        {{ end }}
+        <!-- </span> -->
+        </div>
         <span {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
         {{ if .Description }}
         {{ .Description }}
@@ -28,6 +40,13 @@
         {{ if .Truncated }}
           ... <a class="read-more-symbol" href="{{ .RelPermalink }}">➦</a>
         {{ end }}
+         <!-- TAGS -->
+          <!-- {{ with .Params.tags }}
+            {{- range $index, $el := . -}}
+                <a class="tag"
+                    href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }} </a>
+            {{- end -}}
+           {{ end }}  -->
         </div>
         {{ .Scratch.Delete "draftPage" }}
      {{ end }}

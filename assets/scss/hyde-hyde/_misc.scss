@@ -23,3 +23,45 @@
 .draft {
     color: #999 !important;
 }
+
+//jameshruby
+
+// .tags a {
+// 	color: #505050;
+// 	margin-right: 12px;
+// 	font-size: 0.6em;
+// 	padding: 5px 8px 2px 8px;
+// 	text-decoration: none;
+// 	text-transform: uppercase;
+// 	transition: 300ms background ease;
+// 	display: inline-block;
+// 	margin-bottom: 8px;
+// 	border-bottom: 3px solid #fa5305;
+// 	font-family: 'Liberation Sans', Helvetica, 'Helvetica Neue', sans-serif;
+//   }
+  
+//   .tags a:hover {
+// 	color: #fff;
+// 	background-color: #fa5305;
+// 	border-bottom: 3px solid #fa5305;
+// 	text-decoration: none;
+//   }
+
+//anatole
+.tags {
+   --secondary-bg-color: #2c2d32;
+	--border-color: rgb(38, 38, 38);
+	
+	padding: 4px 6px;
+    border-radius: 3px;
+    color: var(--tag-color) !important;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--border-color);
+}
+.tags,
+.category {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    // margin: 5px 8px 5px 0;
+}

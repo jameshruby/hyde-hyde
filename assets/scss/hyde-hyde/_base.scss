@@ -26,12 +26,13 @@ h4 {
 h1 {
 	font-size: $h1-font-size;
 	line-height: $h1-line-height;
-	margin-bottom: 1rem;
+	margin: .3rem 0 0 0;
 }
 
 h2 {
 	font-size: $h2-font-size;
 	margin-bottom: .5rem;
+	margin-top: .5rem;
 }
 
 h3 {

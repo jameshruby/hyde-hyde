@@ -1,3 +1,61 @@
+.theme_colors {
+    background-color:  #898989; /*text2*/
+    background-color:  #1e1e1e; /*back  */
+    background-color:  #2d1a1b; /*back redish*/
+    background-color:  #898989; /*text2*/
+    
+    background-color:  #270517; /*back purplish */
+ 
+    background-color:  #181818; /*greenD */
+    background-color:  #b3b3b3; /*text */
+}
+
+.theme-base-j-vs {
+	--color_orange: #dd7d06; /*va orance */
+	--color_green: #b0b458; /*va green --color_green_reflex: #b4e703; */
+	--color_yellow: #ffd700; /*va yellow*/
+	--color_blue:#3178ca;
+	--color_purple:#b161a6;
+	--color_pingconst:#d69d85;
+	--color_grayText:#b4b4b4;
+
+	--color_vsLightGray: #252526; /*light gray*/
+	--color_vsDarkGray: #1e1e1e;
+
+	--color_darkOrange: #231710;
+	
+	--color_brownishDarkGray: #2d2622;
+	--color_brownishGray: #211d1b;
+
+	--color_bluePurple:#262334;
+	--colorDarkSidebarPurple:#241b2e;
+
+	// .item__date {
+	// 	color: var(--color_yellow) !important;
+	// }
+
+	background-color: var(--color_vsDarkGray);
+	.sidebar {
+		background-color: var(--color_vsLightGray); 
+	}
+	
+	.content a {
+		color: var(--color_green);
+	}
+	.related-posts li a:hover {
+		color: #ac4142;
+	}
+	.badge-category,
+	a.badge-category {
+		color: var(--color_purple) !important;
+	  	// background-color:var(--color_darkOrange);
+	}
+	h1 {
+		color: var(--color_green); 
+	}
+}
+
+/////////////////////////////////////////////////////
 .theme-base-08 {
 	.sidebar {
 		background-color: #ac4142;

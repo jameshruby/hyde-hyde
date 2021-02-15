@@ -7,6 +7,7 @@
   a {
     color: $gray-1;
     border: none;
+    text-transform: uppercase;
     &:hover {
       color: $link-color;
     }
@@ -15,6 +16,7 @@
     }
   }
   .sidebar-about {
+    margin-top: 60%;
     text-align: center;
   }
   .author-image {
@@ -45,10 +47,16 @@
     border: none;
   }
 }
-
+.site__title a h1 {
+  color: #fff;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  opacity: 0.5;
+}
 .site__description {
   font-size: 1.285rem;
-  font-weight: 300;
+  font-weight: 300; 
 }
 
 .social {
@@ -64,8 +72,9 @@
 }
 
 .img--headshot {
-	height: 115px;
-	width: 115px;
+	height: 100px;
+	width: 100px;
+ 
 }
 
 .img--caption {

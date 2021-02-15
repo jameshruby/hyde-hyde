@@ -23,8 +23,13 @@
     display: none;
   }
   .sidebar {
+    position: fixed;
+    width: 100%;
     margin: 0;
     padding: 0;
+  }
+  .content {
+    padding-top: 60px;
   }
   .menu-content {
     padding: 0 0 0 0px;

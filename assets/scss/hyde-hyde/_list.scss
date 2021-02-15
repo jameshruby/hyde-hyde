@@ -5,13 +5,15 @@
 }
 
 .post-list__item {
-	margin-bottom: 3em;
+	margin-bottom: 2.5em;
 }
 
 .item__title--big {
 	display: block;
 	font-size: $item__title-big-font-size;
-	line-height: 1.25;
+	// line-height: 1.25;
+	font-size: 1.3rem;
+	text-transform: uppercase;
 }
 
 .item__title--small {
@@ -20,8 +22,11 @@
 
 .item__date {
 	color: $item__date-color;
-	display: block;
 	font-size: $item__date-font-size;
 	margin-bottom: .2rem;
+	margin-top: .2rem;
+}
+
+.headerDesc {
 	margin-top: .2rem;
 }
