@@ -11,9 +11,10 @@
 .item__title--big {
 	display: block;
 	font-size: $item__title-big-font-size;
-	// line-height: 1.25;
+	line-height: 1.0;
 	font-size: 1.3rem;
 	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 .item__title--small {
@@ -28,5 +29,5 @@
 }
 
 .headerDesc {
-	margin-top: .2rem;
+	margin-top: .0rem;
 }
