@@ -12,6 +12,9 @@
 
 .theme-base-j-vs {
 	--color_orange: #dd7d06; /*va orance */
+	--color_brightOrange: #ff8d00;
+	--color_blightOrange: #c3a989;
+	--color_orange2: #de9133;
 	--color_green: #b0b458; /*va green --color_green_reflex: #b4e703; */
 	--color_yellow: #ffd700; /*va yellow*/
 	--color_blue:#3178ca;
@@ -30,13 +33,11 @@
 	--color_bluePurple:#262334;
 	--colorDarkSidebarPurple:#241b2e;
 
-	// .item__date {
-	// 	color: var(--color_yellow) !important;
-	// }
+	--color_a:#f4bf75;
 
 	background-color: var(--color_vsDarkGray);
 	.sidebar {
-		background-color: var(--color_vsLightGray); 
+		background-color: var(--color_vsLightGray);
 	}
 	
 	.content a {
@@ -45,10 +46,14 @@
 	.related-posts li a:hover {
 		color: #ac4142;
 	}
+
+	.item__date {
+		color: var(--color_pingconst) !important;
+	}
 	.badge-category,
 	a.badge-category {
-		// color: var(--color_purple) !important;
-	  	// background-color:var(--color_darkOrange);
+		color: var(--color_purple) !important;
+		background-color:var(--color_bluePurple);
 	}
 	h1 {
 		color: var(--color_green); 

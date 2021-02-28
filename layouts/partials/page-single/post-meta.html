@@ -2,8 +2,11 @@
 <div class="post__meta">
     <!-- published date -->
     {{ if not .Date.IsZero }}
-     {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+    <span class="item__date">
+    {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+   </span>
     {{ end }}
+    •
     <!-- categories -->
     {{ with .Params.categories }}
       {{ $total := len . }}
@@ -12,8 +15,10 @@
           {{ $total := sub $total 1 }}
           {{ range $i, $cat := sort . }}
               <a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
-              {{ if lt $i $total }}•{{ end }}
+
+<!--                {{ if lt $i $total }}{{ end }}-->
           {{ end }}
+    •
       {{ end }}
     {{ end }}
     <!-- tags -->
@@ -28,7 +33,7 @@
       {{ end }}
     {{ end }}
     {{ end }} -->
-    &nbsp;
-    <i class="fas fa-clock"></i> {{ .ReadingTime }} min
+
+    {{ .ReadingTime }} min
 </div>
 {{ end }}

@@ -13,11 +13,11 @@ a.badge-category {
 
 .badge {
   --secondary-bg-color: #2c2d32;
-	--border-color: rgb(38, 38, 38);
+  --border-color: rgb(38, 38, 38);
 
   display: inline-block;
   padding: 0.25em 0.4em;
-  font-size: 0.75rem;
+  //font-size: 0.75rem;
   // font-size: 0.65rem;
   // font-weight: bold;
   line-height: 1;
@@ -43,24 +43,4 @@ a.badge-tag {
     text-decoration: none;
     border-bottom: none;
   }
-}
-
-.badge {
-  --secondary-bg-color: #2c2d32;
-	--border-color: rgb(38, 38, 38);
-
-  display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 0.75rem;
-  // font-size: 0.65rem;
-  // font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
-
-  color: var(--tag-color) !important;
-  // color: black !important;
-  background-color: var(--secondary-bg-color);
 }
