@@ -8,12 +8,14 @@
   }
   .sidebar {
     li {
+      text-align: center;
       padding: .1rem 0;
     }
     .container {
       padding-left: 0;
       padding-right: 0;
     }
+    border-bottom: 3px solid var(--color_bluePurpleDarker);
   }
   .hidden-tablet {
     display: none;
@@ -62,12 +64,15 @@
   }
   input#menuToggle + label {
     font-weight: bold;
+    //text-transform: uppercase;
+    opacity: 0.9;
   }
 
   input#menuToggle:checked + label {
     background-image: url(/img/menu-close.svg);
     background-position: 1.5rem;
     color: #fff;
+    opacity: 1;
   }
 
   input#menuToggle:checked ~ .menu-content {

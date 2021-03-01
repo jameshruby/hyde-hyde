@@ -1,15 +1,3 @@
-.theme_colors {
-    background-color:  #898989; /*text2*/
-    background-color:  #1e1e1e; /*back  */
-    background-color:  #2d1a1b; /*back redish*/
-    background-color:  #898989; /*text2*/
-    
-    background-color:  #270517; /*back purplish */
- 
-    background-color:  #181818; /*greenD */
-    background-color:  #b3b3b3; /*text */
-}
-
 .theme-base-j-vs {
 	--color_orange: #dd7d06; /*va orance */
 	--color_brightOrange: #ff8d00;
@@ -22,45 +10,66 @@
 	--color_pingconst:#d69d85;
 	--color_grayText:#b4b4b4;
 
+	--color_darkGrayText: #898989; /*text2*/
+	--color_lightGrayGrayText: #b3b3b3; /*text */
+
 	--color_vsLightGray: #252526; /*light gray*/
 	--color_vsDarkGray: #1e1e1e;
 
 	--color_darkOrange: #231710;
-	
-	--color_brownishDarkGray: #2d2622;
-	--color_brownishGray: #211d1b;
 
-	--color_bluePurple:#262334;
+	--color_bluePurple:#1e1e23;
+	--color_bluePurpleDarker: #17171b;
+	--color_bluePurpleDarkerLighter: #1a1a1f;
 	--colorDarkSidebarPurple:#241b2e;
 
-	--color_a:#f4bf75;
-
-	background-color: var(--color_vsDarkGray);
+	background-color: var(--color_bluePurple);
 	.sidebar {
-		background-color: var(--color_vsLightGray);
+		background-color: var(--color_bluePurple);
+		border-right: 3px solid var(--color_bluePurpleDarker);
 	}
-	
+	ul.pagination li.page-item.active a {
+		color: var(--color_orange2) !important;
+	}
+
 	.content a {
 		color: var(--color_green);
 	}
 	.related-posts li a:hover {
-		color: #ac4142;
+		color: var(--color_orange2);
 	}
 
 	.item__date {
-		color: var(--color_pingconst) !important;
+		color: var(--color_orange2) !important;
 	}
 	.badge-category,
 	a.badge-category {
 		color: var(--color_purple) !important;
-		background-color:var(--color_bluePurple);
+		background-color:var(--color_bluePurpleDarkerLighter);
 	}
 	h1 {
 		color: var(--color_green); 
 	}
 }
 
-/////////////////////////////////////////////////////
+.theme-base-j-va {
+	@extend .theme-base-j-vs;
+
+	--color_brownishDarkGray: #2d2622;
+	--color_brownishGray: #211d1b;
+
+	--color_woodBrown:#1f1c19;
+	--color_lightBrown:#1d1712;
+	--color_woodRedBrownRedish:#1d1313;
+
+	background-color: var(--color_woodBrown);
+	.sidebar {
+		background-color: var(--color_woodBrown);
+		border-right: 2px solid var(--color_woodRedBrownRedish);
+	}
+}
+
+	/////////////////////////////////////////////////////
 .theme-base-08 {
 	.sidebar {
 		background-color: #ac4142;

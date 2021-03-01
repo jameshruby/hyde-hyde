@@ -52,7 +52,7 @@ $code-fence-font-size: .8rem;
 $code-line-height: 1.4;
 
 // links
-$link-color: $blue;
+$link-color: var(--color_orange2); //$blue;
 $link-hover-color: $body-color;
 
 // section
