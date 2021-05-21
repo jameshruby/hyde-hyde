@@ -22,18 +22,18 @@
       {{ end }}
     {{ end }}
     <!-- tags -->
-    <!-- {{ with .Params.tags }}
-      {{ $total := len . }}
-      {{ if gt $total 0 }}
-          <br/>
-          {{ $subtotal := sub $total 1 }} <i class="fas fa-tags"></i>
-          {{ range $i, $tag := . }}
-          <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
-          {{ if lt $i $subtotal }} {{ end }}
-      {{ end }}
-    {{ end }}
-    {{ end }} -->
-
+<!--    {{ with .Params.tags }}-->
+<!--      {{ $total := len . }}-->
+<!--      {{ if gt $total 0 }}-->
+<!--&lt;!&ndash;          <br/>&ndash;&gt;-->
+<!--&lt;!&ndash;          {{ $subtotal := sub $total 1 }} <i class="fas fa-tags"></i>&ndash;&gt;-->
+<!--          {{ range $i, $tag := . }}-->
+<!--          <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">#{{ $tag | lower }}</a>-->
+<!--&lt;!&ndash;          {{ if lt $i $subtotal }} {{ end }}&ndash;&gt;-->
+<!--      {{ end }}-->
+<!--    {{ end }}-->
+<!--    {{ end }}-->
+<!--    •-->
     {{ .ReadingTime }} min
 </div>
 {{ end }}

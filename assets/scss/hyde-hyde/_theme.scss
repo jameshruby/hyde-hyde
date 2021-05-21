@@ -37,7 +37,9 @@
 		color: (--color_lightGrayGrayTextvar) !important; //#90a959 var(--color_orange2)
 	}
 	.badge-category,
-	a.badge-category {
+	a.badge-category,
+	.badge-tag,
+	a.badge-tag{
 		color: var(--color_green2)  !important; // #90a959
 		background-color:var(--color_bluePurpleDarkerLighter);
 	}
