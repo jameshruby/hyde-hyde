@@ -21,6 +21,7 @@
 
 	--color_greenLighterForest:#9ca991;
 	--color_greenMute: #75b5aa;
+	--color_whitey:  #f9f9f9;
 
 	ul.pagination li.page-item.active a {
 		color: var(--color_greenMute) !important;
@@ -37,9 +38,7 @@
 		color: (--color_lightGrayGrayTextvar) !important; //#90a959 var(--color_orange2)
 	}
 	.badge-category,
-	a.badge-category,
-	.badge-tag,
-	a.badge-tag{
+	a.badge-category {
 		color: var(--color_green2)  !important; // #90a959
 		background-color:var(--color_bluePurpleDarkerLighter);
 	}
@@ -70,20 +69,37 @@
 		text-transform: uppercase;
 		//font-size: 1.8rem;
 	}
-	.collapsible-menu label span {
-		opacity: 0.5;
-	}
-	.collapsible-menu label span:hover, .site__title h1:hover  {
+	.collapsible-menu label a {
 		opacity: 0.8;
 	}
+	.collapsible-menu label a:hover, .site__title h1:hover  {
+		opacity: 1;
+		color:#fff;
+	}
 	background-color: var(--color_bluePurpleDarker);
-		.sidebar {
+	.sidebar {
 		background-color: var(--color_bluePurpleDarkerLighter);
 		border-right: 2px solid black;
 	}
+
+	a, a h1 {
+		transition: 0.3s;
+	}
+
+	a:focus, a:hover {
+		transition: 0.3s;
+		//-moz-transition: 0.3s;
+	}
+
+	.content a:focus, .content a:hover {
+		color: var(--color_whitey) !important;
+	}
+	.item__title--big h2 a:visited {
+		color: var(--color_blightOrange) !important;
+	}
 }
 
-	/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 .theme-base-08 {
 	.sidebar {
 		background-color: #ac4142;
