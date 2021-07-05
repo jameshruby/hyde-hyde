@@ -97,6 +97,24 @@
 	.item__title--big h2 a:visited {
 		color: var(--color_blightOrange) !important;
 	}
+
+	.background-image {
+		background: url("/img/skyBackgroundSmall.jpg") center / cover fixed;
+		//background: url("/img/wallBackgroundSmall.jpg") no-repeat center center fixed;
+		//background: url("https://unsplash.it/200") center / cover !important;
+		//background: url("https://picsum.photos/id/1002/250") center / cover !important;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+		left: 0; right: 0; top: 0; bottom: 0;
+		opacity:0.1;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter: blur(1.5rem);
+	}
 }
 
 /////////////////////////////////////////////////////
